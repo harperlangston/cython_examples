@@ -2,11 +2,14 @@ CC = gcc
 
 default: libswap.a
 
-libswap.a: swap.o
+libswap.a: swap.o sort.o
 	ar rcs $@ $^
     
-swaps.o: swap.c swap.h
-	$(CC) -c $<
+swap.o: swap.c swap.h
+	$(CC) -c -fPIC $<
+
+sort.o: sort.c sort.h
+	$(CC) -c -fPIC $<
 
 clean:
-	rm *.o *.a *~
+	rm -f *.o *.a *~
