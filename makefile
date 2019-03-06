@@ -9,4 +9,4 @@ $(LIB_DIR)/libswap.a:
 	make -C $(LIB_DIR) libswap.a
 
 clean:
-	rm *.so *~
+	rm -f *.so *~
