@@ -1,8 +1,8 @@
 CC = gcc
 
-default: libswap.a
+default: lib_cycodes.a
 
-libswap.a: swap.o sort.o
+lib_cycodes.a: swap.o sort.o
 	ar rcs $@ $^
     
 swap.o: swap.c swap.h

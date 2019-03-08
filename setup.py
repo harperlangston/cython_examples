@@ -5,7 +5,7 @@ from Cython.Build import cythonize
 swap_extension = Extension(
     name="pyswap",
     sources=["pyswap.pyx"],
-    libraries=["swap"],
+    libraries=["_cycodes"],
     library_dirs=["lib"],
     include_dirs=["lib"]
 )
