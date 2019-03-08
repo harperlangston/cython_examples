@@ -1,4 +1,4 @@
-# cython_val_swap
+# cython_examples
 Simple examples for using Cython / Python / C to call a C functions from Python.  Passing by reference.
 
 Examples so far include:
